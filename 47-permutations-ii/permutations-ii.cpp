@@ -8,7 +8,7 @@ void solve(vector<int>& nums,vector<int>& temp,vector<int>& used){
             return;
         }
         for(int i = 0; i < nums.size(); i++) {
-            if (i > 0 && nums[i] == nums[i-1] && !used[i-1])
+            if (i > 0 && nums[i] == nums[i-1] && !used[i-1])//selected ke equal na ho aur ppichle waale ke na ho
             continue;
             if(used[i] == 0) {
                 temp.push_back(nums[i]);
@@ -23,7 +23,7 @@ void solve(vector<int>& nums,vector<int>& temp,vector<int>& used){
 }
 
     vector<vector<int>> permuteUnique(vector<int>& nums) {
-    sort(nums.begin(),nums.end());
+    sort(nums.begin(),nums.end());//jisse i-1 element check kr paaye
     vector<int> temp;
     vector<int> used(nums.size(), 0);
 
