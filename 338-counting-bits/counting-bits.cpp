@@ -5,7 +5,7 @@ public:
         vector<int> nums;
 
         for(int i=0; i<=n; i++){
-            int count = 0;
+            int count = 0;//reset at eevry iteration
             int num = i;
 
             while(num != 0){
